@@ -19,4 +19,17 @@
             url("../fonts/Atkinson Hyperlegible/Web Fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
         font-weight: bold;
     }
+    html, body {
+        background-color: #121212;
+        @apply text-white;
+    }
+    h2 {
+        @apply text-white font-bold;
+    }
+    h3 {
+        @apply text-gray-200;
+    }
+    .inactive {
+        @apply text-gray-700;
+    }
 }
