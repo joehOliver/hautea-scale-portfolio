@@ -7,7 +7,7 @@ import Hero from "../components/hero";
 const IndexPage = () => (
     <>
       <SEO title="Home" />
-      <Navbar></Navbar>
+      <Navbar title="Portfolio"/>
       <Hero></Hero>
     </>
 )

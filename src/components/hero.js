@@ -25,6 +25,10 @@ function Hero() {
                         Enhancement
                     </li>
                 </ul>
+                <p>
+                    Robert Van Balorio <br/>
+                    <span className='text-gray-400 text-sm'>SCALE Adviser</span>
+                </p>
                 
             </div>
             <div>
