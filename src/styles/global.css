@@ -29,7 +29,25 @@
     h3 {
         @apply text-gray-200;
     }
+    
+}
+
+@layer utilities {
     .inactive {
         @apply text-gray-700;
+    }
+    @variants hover{
+        .img-background-a {
+            background-image: url('../images/action/group_pic.jpg');
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .img-background-b {
+            background-image: url('../images/action/group_pic.jpg');
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }

@@ -7,16 +7,16 @@ function Hero() {
     return (
         <main className='container grid grid-cols-2 gap-4 mx-auto my-10'>
             <div>
-                <h3 className='mb-2'>VIEW PROJECTS</h3>
+                <h3 className='mb-3'>VIEW PROJECTS</h3>
                 <ul>
                     <li className='inactive md:text-6xl text-3xl font-bold'>
                         Service
                     </li>
                     <li>
-                        <Link className='md:text-6xl text-3xl font-bold' to='/creativity/jardin-de-justino'>Creativity</Link>
+                        <Link className='md:text-6xl text-3xl font-bold hover:img-background-a' to='/creativity/jardin-de-justino'>Creativity</Link>
                     </li>
                     <li>
-                        <Link className='md:text-6xl text-3xl font-bold' to='/action/MMA'>Action</Link>
+                        <Link className='md:text-6xl text-3xl font-bold hover:img-background-a' to='/action/MMA'>Action</Link>
                     </li>
                     <li className='inactive md:text-6xl text-3xl font-bold'>
                         Leadership
