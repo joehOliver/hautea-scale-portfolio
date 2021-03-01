@@ -19,9 +19,12 @@
             url("../fonts/Atkinson Hyperlegible/Web Fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
         font-weight: bold;
     }
-    html, body {
+    html {
+        @apply h-screen w-screen min-h-screen;
+    }
+    body {
         background-color: #121212;
-        @apply text-white;
+        @apply text-white h-full w-full min-h-full;
     }
     h2 {
         @apply text-white font-bold;
@@ -36,18 +39,29 @@
     .inactive {
         @apply text-gray-700;
     }
-    @variants hover{
-        .img-background-a {
-            background-image: url('../images/action/group_pic.jpg');
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .img-background-b {
-            background-image: url('../images/action/group_pic.jpg');
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
+    .borderLeftRight {
+        display: inline-block;
+        position: relative;
+        color: white;
+      }
+      
+      .borderLeftRight::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #FAFF03;
+        transform-origin: bottom right;
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      
+      .borderLeftRight:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      
+    
 }

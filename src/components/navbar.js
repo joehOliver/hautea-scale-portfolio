@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "gatsby";
 import logo from '../images/joeh-logoV2.svg';
 
 function Navbar() {
     return (
         <nav className='flex flex-wrap md:px-10 px-6 py-5'>
-            <div>
+            <Link to='/'>
                 <img src={logo} alt="JOEH" width="48"/>
-            </div>
+            </Link>
             <div className='my-auto md:pl-5 pl-4'>
                 <p className='text-2xl font-bold'>Portfolio</p>
             </div>
