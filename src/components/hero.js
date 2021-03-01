@@ -5,7 +5,7 @@ import cute from '../images/justin-cute.gif';
 
 function Hero() {
     return (
-        <section className='container grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 lg:mx-auto mx-0 px-6 lg:px-0 h-full w-full'>
+        <section className='md:container grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 lg:mx-auto mx-0 px-6 lg:px-0 h-full w-full'>
             <div className='mt-10 mb-8'>
                 <h3 className='mb-3'>VIEW PROJECTS</h3>
                 <ul>
